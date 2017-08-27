@@ -2,20 +2,20 @@
 [![Coverage Status](https://coveralls.io/repos/github/yc-angular/auth/badge.svg?branch=master)](https://coveralls.io/github/yc-angular/auth?branch=master)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-# @yci/auth
+# @yca/auth
 
 ## Installation
 
 1. Install the Ionic plugin
 ```
- npm i -S @yci/auth
+ npm i -S @yca/auth
 ```
 
 2. Add it to your app’s NgModule.
 
 ```typescript
 // Import your library
-import { AuthModule } from '@yci/auth';
+import { AuthModule } from '@yca/auth';
 
 @NgModule({
 
@@ -38,7 +38,7 @@ export class AppModule { }
 3. setup storage and decoder
 
 ```ts
-import { Auth } from '@yci/auth';
+import { Auth } from '@yca/auth';
 import * as jwt from 'jsonwebtoken';
 
 constructor(public auth: Auth) {
@@ -57,7 +57,7 @@ constructor(public auth: Auth) {
 Once your library is imported, you can use its service in your Angular application:
 
 ```ts
-import { Auth } from '@yci/auth';
+import { Auth } from '@yca/auth';
 
 constructor(public auth: Auth) {
   auth.user // get the user payload
