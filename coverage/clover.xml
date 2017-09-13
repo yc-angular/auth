@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1503836280826" clover="3.2.0">
-  <project timestamp="1503836280827" name="All files">
+<coverage generated="1505281081913" clover="3.2.0">
+  <project timestamp="1505281081913" name="All files">
     <metrics statements="27" coveredstatements="27" conditionals="6" coveredconditionals="6" methods="9" coveredmethods="9" elements="42" coveredelements="42" complexity="0" loc="27" ncloc="27" packages="1" files="2" classes="2">
       <file name="index.ts" path="/Users/yuchen/Projects/yca/auth/src/index.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
