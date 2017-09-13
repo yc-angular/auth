@@ -88,6 +88,7 @@ export interface AuthConfig {
 export interface AuthStorage {
   get(key: string): Promise<any>;
   set(key: string, value: any): Promise<any>;
+  delete(key: string): Promise<any>;
   clear(): Promise<any>;
 }
 
