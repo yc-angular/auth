@@ -20,6 +20,7 @@ describe('AuthModule', () => {
       storage: {
         get: x => Promise.resolve(localStorage.getItem(x)),
         set: (key, value) => Promise.resolve(localStorage.setItem(key, value)),
+        delete: x => Promise.resolve(localStorage.removeItem(x)),
         clear: () => Promise.resolve(localStorage.clear())
       },
       decoder: jwt.decode as any

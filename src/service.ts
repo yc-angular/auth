@@ -49,7 +49,7 @@ export class Auth {
 
   async signout(): Promise<void> {
     this.__jwt = null;
-    await this.__as.set('__jwt', null);
+    await this.__as.delete('__jwt');
   }
 }
 
@@ -63,6 +63,7 @@ export type AuthDecoder = (jwt: string) => AuthUser;
 export interface AuthStorage {
   get(key: string): Promise<any>;
   set(key: string, value: any): Promise<any>;
+  delete(key: string): Promise<any>;
   clear(): Promise<any>;
 }
 
