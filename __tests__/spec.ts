@@ -75,6 +75,6 @@ describe('AuthModule', () => {
     await auth.signout();
     expect(auth.isAuthenticated).toBe(false);
     expect(auth.user).toBe(null);
-    expect(auth.jwt).toBe(null);
+    expect(auth.jwt).toBeFalsy();
   });
 });
