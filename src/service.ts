@@ -48,7 +48,7 @@ export class Auth {
   }
 
   async signout(): Promise<void> {
-    this.__jwt = null;
+    delete this.__jwt;
     await this.__as.delete('__jwt');
   }
 }
