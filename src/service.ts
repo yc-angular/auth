@@ -12,6 +12,10 @@ export class Auth {
     this.readStorage();
   }
 
+  ready() {
+    return this.readStorage();
+  }
+
   private async readStorage() {
     const jwt = await this.__as.get('__jwt');
     if(jwt && jwt !== 'null') {
