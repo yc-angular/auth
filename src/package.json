@@ -1,6 +1,6 @@
 {
   "name": "@yca/auth",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/yc-angular/auth.git"
@@ -21,8 +21,8 @@
   "jsnext:main": "yca-auth.js",
   "typings": "yca-auth.d.ts",
   "peerDependencies": {
-    "@angular/core": "^4.0.0",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
+    "@angular/core": ">=4.0.0",
+    "rxjs": ">=5.1.0",
+    "zone.js": ">=0.8.4"
   }
 }
