@@ -6,6 +6,8 @@ export class Auth {
   private __as: AuthStorage;
   private __decoder: AuthDecoder;
 
+  public JWT_KEY = '__jwt';
+
   setup(ac: AuthConfig) {
     this.__as = ac.storage;
     this.__decoder = ac.decoder;
@@ -17,7 +19,7 @@ export class Auth {
   }
 
   private async readStorage() {
-    const jwt = await this.__as.get('__jwt');
+    const jwt = await this.__as.get(this.JWT_KEY);
     if(jwt && jwt !== 'null') {
       this.__jwt = jwt;
     }
@@ -33,7 +35,7 @@ export class Auth {
 
   signJwt(jwt: string): Promise<any> {
     this.__jwt = jwt;
-    return this.__as.set('__jwt', jwt);
+    return this.__as.set(this.JWT_KEY, jwt);
   }
 
   get user(): AuthUser {
@@ -56,7 +58,7 @@ export class Auth {
 
   async signout(): Promise<void> {
     delete this.__jwt;
-    await this.__as.delete('__jwt');
+    await this.__as.delete(this.JWT_KEY);
   }
 }
 
