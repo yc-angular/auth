@@ -5,17 +5,19 @@ export class Auth {
   private __jwt: string;
   private __as: AuthStorage;
   private __decoder: AuthDecoder;
+  private __ready: Promise<void>;
 
   public JWT_KEY = '__jwt';
 
-  setup(ac: AuthConfig) {
+  async setup(ac: AuthConfig) {
     this.__as = ac.storage;
     this.__decoder = ac.decoder;
-    this.readStorage();
+    this.__ready = this.readStorage();
+    await this.__ready;
   }
 
   ready() {
-    return this.readStorage();
+    return this.__ready;
   }
 
   private async readStorage() {
