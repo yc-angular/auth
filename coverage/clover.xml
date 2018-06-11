@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1526968082020" clover="3.2.0">
-  <project timestamp="1526968082021" name="All files">
-    <metrics statements="31" coveredstatements="30" conditionals="10" coveredconditionals="10" methods="11" coveredmethods="10" elements="52" coveredelements="50" complexity="0" loc="31" ncloc="31" packages="1" files="2" classes="2">
+<coverage generated="1528677145726" clover="3.2.0">
+  <project timestamp="1528677145726" name="All files">
+    <metrics statements="32" coveredstatements="31" conditionals="10" coveredconditionals="10" methods="11" coveredmethods="10" elements="53" coveredelements="51" complexity="0" loc="32" ncloc="32" packages="1" files="2" classes="2">
       <file name="index.ts" path="/Users/yuchen/Projects/yca/auth/src/index.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -11,33 +11,34 @@
         <line num="16" count="1" type="stmt"/>
       </file>
       <file name="service.ts" path="/Users/yuchen/Projects/yca/auth/src/service.ts">
-        <metrics statements="26" coveredstatements="25" conditionals="10" coveredconditionals="10" methods="10" coveredmethods="9"/>
+        <metrics statements="27" coveredstatements="26" conditionals="10" coveredconditionals="10" methods="10" coveredmethods="9"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="9" count="7" type="stmt"/>
-        <line num="12" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
         <line num="13" count="7" type="stmt"/>
         <line num="14" count="7" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="22" count="7" type="stmt"/>
-        <line num="23" count="7" type="cond" truecount="4" falsecount="0"/>
-        <line num="24" count="4" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
-        <line num="38" count="3" type="stmt"/>
-        <line num="42" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="43" count="6" type="stmt"/>
-        <line num="44" count="6" type="stmt"/>
-        <line num="45" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="46" count="4" type="stmt"/>
-        <line num="48" count="2" type="stmt"/>
-        <line num="52" count="2" type="stmt"/>
-        <line num="53" count="2" type="stmt"/>
-        <line num="54" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="56" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="25" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+        <line num="44" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="46" count="6" type="stmt"/>
+        <line num="47" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="56" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
       </file>
     </metrics>
   </project>
