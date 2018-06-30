@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <coverage generated="1528677145726" clover="3.2.0">
   <project timestamp="1528677145726" name="All files">
     <metrics statements="32" coveredstatements="31" conditionals="10" coveredconditionals="10" methods="11" coveredmethods="10" elements="53" coveredelements="51" complexity="0" loc="32" ncloc="32" packages="1" files="2" classes="2">
+=======
+<coverage generated="1530345567846" clover="3.2.0">
+  <project timestamp="1530345567846" name="All files">
+    <metrics statements="31" coveredstatements="30" conditionals="10" coveredconditionals="10" methods="11" coveredmethods="10" elements="52" coveredelements="50" complexity="0" loc="31" ncloc="31" packages="1" files="2" classes="2">
+>>>>>>> hotfix/v1.2.0
       <file name="index.ts" path="/Users/yuchen/Projects/yca/auth/src/index.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -34,11 +40,18 @@
         <line num="48" count="4" type="stmt"/>
         <line num="50" count="2" type="stmt"/>
         <line num="54" count="2" type="stmt"/>
+<<<<<<< HEAD
         <line num="55" count="2" type="stmt"/>
         <line num="56" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="58" count="1" type="stmt"/>
         <line num="62" count="1" type="stmt"/>
         <line num="63" count="1" type="stmt"/>
+=======
+        <line num="55" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+>>>>>>> hotfix/v1.2.0
       </file>
     </metrics>
   </project>
