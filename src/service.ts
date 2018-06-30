@@ -32,7 +32,7 @@ export class Auth {
   }
 
   get isAuthenticated(): boolean {
-    return !!this.user;
+    return !!this.info;
   }
 
   signJwt(jwt: string): Promise<any> {
@@ -40,7 +40,7 @@ export class Auth {
     return this.__as.set(this.JWT_KEY, jwt);
   }
 
-  get user(): AuthUser {
+  get info(): AuthInfo {
     if (!this.__jwt) return null;
     const decoded: any = this.__decoder(this.__jwt);
     const now = new Date().getTime();
@@ -51,9 +51,8 @@ export class Auth {
   }
 
   hasRoles(...roles: string[]): boolean {
-    const user = this.user;
     for(let role of roles) {
-      if(!~user.roles.indexOf(role)) return false;
+      if(!~this.info.roles.indexOf(role)) return false;
     }
     return true;
   }
@@ -69,7 +68,7 @@ export interface AuthConfig {
   decoder: AuthDecoder;
 }
 
-export type AuthDecoder = (jwt: string) => AuthUser;
+export type AuthDecoder = (jwt: string) => AuthInfo;
 
 export interface AuthStorage {
   get(key: string): Promise<any>;
@@ -78,8 +77,12 @@ export interface AuthStorage {
   clear(): Promise<any>;
 }
 
-export interface AuthUser {
+export interface AuthInfo {
   _id: string;
   roles: Array<string>;
   username: string;
+  providers: Array<{
+    name: string;
+    openid: string;
+  }>;
 };

@@ -33,7 +33,7 @@ describe('AuthModule', () => {
 
   it('Should be not authenticated', () => {
     expect(auth.isAuthenticated).toBe(false);
-    expect(auth.user).toBe(null);
+    expect(auth.info).toBe(null);
     expect(auth.jwt).toBeFalsy();
   });
 
@@ -44,7 +44,7 @@ describe('AuthModule', () => {
     }, 'secret', { expiresIn: '1m' });
     auth.signJwt(token);
     expect(auth.isAuthenticated).toBe(true);
-    expect(auth.user).toBeTruthy();
+    expect(auth.info).toBeTruthy();
     expect(auth.jwt).toBeTruthy();
   });
 
@@ -63,7 +63,7 @@ describe('AuthModule', () => {
     }, 'secret', { expiresIn: '0s' });
     auth.signJwt(token);
     expect(auth.isAuthenticated).toBe(false);
-    expect(auth.user).toBe(null);
+    expect(auth.info).toBe(null);
   });
 
   it('Should signout', async () => {
@@ -74,7 +74,7 @@ describe('AuthModule', () => {
     auth.signJwt(token);
     await auth.signout();
     expect(auth.isAuthenticated).toBe(false);
-    expect(auth.user).toBe(null);
+    expect(auth.info).toBe(null);
     expect(auth.jwt).toBeFalsy();
   });
 });
