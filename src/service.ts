@@ -6,6 +6,8 @@ export class Auth {
   private __as: AuthStorage;
   private __decoder: AuthDecoder;
   private __ready: Promise<void>;
+  private __onSignjwt: () => Promise<void>;
+  private __onSignout: () => Promise<void>;
 
   public JWT_KEY = '__jwt';
 
@@ -35,9 +37,11 @@ export class Auth {
     return !!this.info;
   }
 
-  signJwt(jwt: string): Promise<any> {
+  async signJwt(jwt: string): Promise<any> {
     this.__jwt = jwt;
-    return this.__as.set(this.JWT_KEY, jwt);
+    const res = await this.__as.set(this.JWT_KEY, jwt);
+    if(this.__onSignjwt) await this.__onSignjwt();
+    return res;
   }
 
   get info(): AuthInfo {
@@ -60,6 +64,15 @@ export class Auth {
   async signout(): Promise<void> {
     delete this.__jwt;
     await this.__as.delete(this.JWT_KEY);
+    if(this.__onSignout) await this.__onSignout();
+  }
+
+  onSignjwt(fn: () => Promise<void>) {
+    this.__onSignjwt = fn;
+  }
+
+  onSignout(fn: () => Promise<void>) {
+    this.__onSignout = fn;
   }
 }
 
