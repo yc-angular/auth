@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1528677145726" clover="3.2.0">
-  <project timestamp="1528677145726" name="All files">
-    <metrics statements="32" coveredstatements="31" conditionals="10" coveredconditionals="10" methods="11" coveredmethods="10" elements="53" coveredelements="51" complexity="0" loc="32" ncloc="32" packages="1" files="2" classes="2">
+<coverage generated="1530527281788" clover="3.2.0">
+  <project timestamp="1530527281789" name="All files">
+    <metrics statements="36" coveredstatements="35" conditionals="14" coveredconditionals="14" methods="13" coveredmethods="12" elements="63" coveredelements="61" complexity="0" loc="36" ncloc="36" packages="1" files="2" classes="2">
       <file name="index.ts" path="/Users/yuchen/Projects/yca/auth/src/index.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -11,41 +11,38 @@
         <line num="16" count="1" type="stmt"/>
       </file>
       <file name="service.ts" path="/Users/yuchen/Projects/yca/auth/src/service.ts">
-        <metrics statements="27" coveredstatements="26" conditionals="10" coveredconditionals="10" methods="10" coveredmethods="9"/>
+        <metrics statements="31" coveredstatements="30" conditionals="14" coveredconditionals="14" methods="12" coveredmethods="11"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
-        <line num="13" count="7" type="stmt"/>
-        <line num="14" count="7" type="stmt"/>
-        <line num="15" count="7" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="24" count="7" type="stmt"/>
-        <line num="25" count="7" type="cond" truecount="4" falsecount="0"/>
-        <line num="26" count="4" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-        <line num="35" count="4" type="stmt"/>
-        <line num="39" count="3" type="stmt"/>
-        <line num="40" count="3" type="stmt"/>
-        <line num="44" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="45" count="6" type="stmt"/>
-        <line num="46" count="6" type="stmt"/>
-        <line num="47" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="48" count="4" type="stmt"/>
-        <line num="50" count="2" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="27" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="48" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="6" type="stmt"/>
+        <line num="50" count="6" type="stmt"/>
+        <line num="51" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="4" type="stmt"/>
         <line num="54" count="2" type="stmt"/>
-<<<<<<< HEAD
-        <line num="55" count="2" type="stmt"/>
-        <line num="56" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="58" count="1" type="stmt"/>
-        <line num="62" count="1" type="stmt"/>
-        <line num="63" count="1" type="stmt"/>
-=======
-        <line num="55" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="59" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="61" count="1" type="stmt"/>
-        <line num="62" count="1" type="stmt"/>
->>>>>>> hotfix/v1.2.0
+        <line num="65" count="2" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="67" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
       </file>
     </metrics>
   </project>
