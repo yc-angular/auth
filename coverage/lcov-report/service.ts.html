@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">96.67% </span>
+        <span class="strong">97.22% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>29/30</span>
+        <span class='fraction'>35/36</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>10/10</span>
+        <span class='fraction'>14/14</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">90% </span>
+        <span class="strong">91.67% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>9/10</span>
+        <span class='fraction'>11/12</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">96.3% </span>
+        <span class="strong">96.77% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>26/27</span>
+        <span class='fraction'>30/31</span>
       </div>
     </div>
   </div>
@@ -126,12 +126,24 @@
 81
 82
 83
-<<<<<<< HEAD
 84
-85</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-=======
-84</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
->>>>>>> hotfix/v1.2.0
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -140,13 +152,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -154,8 +168,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -169,8 +183,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -191,8 +207,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -222,6 +251,8 @@ export class Auth {
   private __as: AuthStorage;
   private __decoder: AuthDecoder;
   private __ready: Promise&lt;void&gt;;
+  private __onSignjwt: () =&gt; Promise&lt;void&gt;;
+  private __onSignout: () =&gt; Promise&lt;void&gt;;
 &nbsp;
   public JWT_KEY = '__jwt';
 &nbsp;
@@ -251,9 +282,11 @@ export class Auth {
     return !!this.info;
   }
 &nbsp;
-  signJwt(jwt: string): Promise&lt;any&gt; {
+  async signJwt(jwt: string): Promise&lt;any&gt; {
     this.__jwt = jwt;
-    return this.__as.set(this.JWT_KEY, jwt);
+    const res = await this.__as.set(this.JWT_KEY, jwt);
+    if(this.__onSignjwt) await this.__onSignjwt();
+    return res;
   }
 &nbsp;
   get info(): AuthInfo {
@@ -276,6 +309,15 @@ export class Auth {
   async signout(): Promise&lt;void&gt; {
     delete this.__jwt;
     await this.__as.delete(this.JWT_KEY);
+    if(this.__onSignout) await this.__onSignout();
+  }
+&nbsp;
+  onSignjwt(fn: () =&gt; Promise&lt;void&gt;) {
+    this.__onSignjwt = fn;
+  }
+&nbsp;
+  onSignout(fn: () =&gt; Promise&lt;void&gt;) {
+    this.__onSignout = fn;
   }
 }
 &nbsp;
@@ -297,17 +339,17 @@ export interface AuthInfo {
   _id: string;
   roles: Array&lt;string&gt;;
   username: string;
+  providers: Array&lt;{
+    name: string;
+    openid: string;
+  }&gt;;
 };</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-<<<<<<< HEAD
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Jun 11 2018 08:32:25 GMT+0800 (CST)
-=======
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Jun 30 2018 15:59:27 GMT+0800 (CST)
->>>>>>> hotfix/v1.2.0
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Jul 02 2018 18:28:01 GMT+0800 (CST)
 </div>
 </div>
 <script src="prettify.js"></script>
