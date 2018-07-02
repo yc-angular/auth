@@ -77,4 +77,23 @@ describe('AuthModule', () => {
     expect(auth.info).toBe(null);
     expect(auth.jwt).toBeFalsy();
   });
+
+  it('Should exec event handler', async () => {
+    const token = jwt.sign({
+      username: 'tom',
+      roles: ['admin', 'user']
+    }, 'secret', { expiresIn: '1m' });
+    let handleOnSignjwt: boolean;
+    let handleOnSignout: boolean;
+    auth.onSignjwt(async () => {
+      handleOnSignjwt = true;
+    });
+    auth.onSignout(async () => {
+      handleOnSignout = true;
+    });
+    auth.signJwt(token);
+    await auth.signout();
+    expect(handleOnSignjwt).toBe(true);
+    expect(handleOnSignout).toBe(true);
+  });
 });
