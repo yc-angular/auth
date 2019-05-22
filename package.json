@@ -44,7 +44,7 @@
     "@angular/core": "^5.0.0",
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
-    "@compodoc/compodoc": "^1.0.0-beta.10",
+    "@compodoc/compodoc": "^1.1.9",
     "@types/jest": "^19.2.3",
     "@types/jsonwebtoken": "^7.2.3",
     "@types/node": "~6.0.60",
@@ -73,5 +73,8 @@
   },
   "engines": {
     "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "@yct/auth": "^1.0.0"
   }
 }
